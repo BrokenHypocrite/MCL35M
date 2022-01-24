@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>The MCL35M</title>
+    <meta charset="utf-8">
+	<meta name="author" content="BrokenHypocrite">
+    <meta name="description" content="Home of the No. 1 and No. 17 Official McLaren MCL35M NFTs.">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./css/styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+  <header>
+    <h1><a href="/">MCL35M NFTs</a></h1>
+    <span class="separator layout-md"> | </span>
+    <!-- removing these pages for now
+    <a class="item layout-md" href="./no1.html">
+      No. 1
+    </a>
+    <span class="separator"> | </span>
+    <a class="item" href="./no17.html">
+      No. 17
+    </a>
+    <span class="separator"> | </span>
+    -->
+    <a class="item" href="./car.html">
+      The Car
+    </a>
+    <span class="separator"> | </span>
+    <a class="item" href="./components.html">
+      Components
+    </a>
+    <!-- removing these pages for now
+	<span class="separator"> | </span>
+    <a class="item" href="./history.html">
+      History
+    </a>
+    -->
+    <span class="flex-grow"></span>
+  </header>
+    <!-- <model-viewer> HTML element -->
+	<model-viewer id="toggle-model" bounds="tight" src="./models/model-3d-v2.glb" camera-controls environment-image="./images/autoshop_01_2k.hdr" exposure="0.8" shadow-intensity="5" camera-orbit="45.12deg 62.01deg auto" field-of-view="29.42deg" shadow-softness="1" position="-0.00008867600741421788m 0.2664519247149626m 0.15132948526807677m">
+		<button onclick="nose()" class="Hotspot" slot="hotspot-1" data-position="0.0m 0.11096214351183376m 0.7129962626795794m" data-normal="0.045755665091794864m 0.9587446147125691m 0.2805622620233433m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Nosebox</div>
+		</button><button onclick="fwing()" class="Hotspot" slot="hotspot-2" data-position="0.18254308986927298m 0.0416440075846658m 0.8108229623136456m" data-normal="-0.05207915109238111m 0.9980406866120528m -0.034677801090022255m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Front Wing</div>
+		</button><button onclick="lf_wheel()" class="Hotspot" slot="hotspot-3" data-position="0.24950746967262286m 0.19511939100343145m 0.5613086410580306m" data-normal="-0.056655289384040027m 0.9486886206022879m 0.31109496833690364m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Left Front Wheel + Tire</div>
+		</button><button onclick="rf_wheel()" class="Hotspot" slot="hotspot-4" data-position="-0.24557340509500422m 0.19399724959165265m 0.564014172508638m" data-normal="0.056655289384040027m 0.9486886206022879m 0.31109496833690364m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Right Front Wheel + Tire</div>
+		</button><button onclick="chassis()" class="Hotspot" slot="hotspot-5" data-position="0.036233664721700594m 0.19749104258079608m 0.3365042541972145m" data-normal="-0.006435297736908125m 0.9997987972542386m 0.01899873553727568m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Chassis</div>
+		</button><button onclick="halo()" class="Hotspot" slot="hotspot-6" data-position="-0.00008867600741421788m 0.2664519247149626m 0.15132948526807677m" data-normal="-0.010362728222047436m 0.9947032721151811m -0.1022644332461097m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Halo</div>
+		</button><button onclick="steeringwheel()" class="Hotspot" slot="hotspot-7" data-position="-0.00004143456017358105m 0.16985369307165765m 0.1329332848896243m" data-normal="0.021761097456987913m -0.1257898876622579m -0.9918182085439772m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Steering Wheel</div>
+		</button><button onclick="seat()" class="Hotspot" slot="hotspot-8" data-position="0.001103642299707708m 0.09120578122553047m 0.006316088939178455m" data-normal="0m 0.5545279212318498m 0.832165118575805m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Driver's Seat</div>
+		</button><button onclick="enginecover()" class="Hotspot" slot="hotspot-9" data-position="0.018311414766158274m 0.29707049150137343m -0.20863489129100565m" data-normal="0.48170406513709924m 0.8757074666304975m -0.03313044699350391m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Engine Cover</div>
+		</button><button onclick="floor()" class="Hotspot" slot="hotspot-11" data-position="0.007466627781770041m 0.0007200092077255249m -0.06532465703517154m" data-normal="0m -1m 0m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Car Floor</div>
+		</button><button onclick="lmirror()" class="Hotspot" slot="hotspot-12" data-position="0.1798100040905351m 0.22092961383117948m 0.16928831619266171m" data-normal="0.24546309064899116m 0.4157704065289992m 0.8757184708476553m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Left Wing Mirror</div>
+		</button><button onclick="rmirror()" class="Hotspot" slot="hotspot-14" data-position="-0.18479686071224866m 0.22128203148750875m 0.16750435082213488m" data-normal="-0.4195282137372178m 0.40092120967999806m 0.8144066929410552m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Right Wing Mirror</div>
+		</button><button onclick="lr_wheel()" class="Hotspot" slot="hotspot-15" data-position="0.26297272959714735m 0.144032629785537m -0.6022320364379983m" data-normal="-0.005836488972950775m 0.7429961460274015m 0.6692702461524023m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Left Rear Wheel + Tire</div>
+		</button><button onclick="suspension()" class="Hotspot" slot="hotspot-17" data-position="0.09209336371344011m 0.16595892507044674m 0.507012662728517m" data-normal="0.061077269946713635m 0.9896114765701067m -0.13014873236643354m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Suspension</div>
+		</button><button onclick="rwing()"class="Hotspot" slot="hotspot-18" data-position="-0.0686530083951811m 0.22441706855697174m -0.771877061897174m" data-normal="0m 0.9909910839018184m 0.13392785978689825m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Rear Wing</div>
+		</button><button onclick="rr_wheel()" class="Hotspot" slot="hotspot-19" data-position="-0.25839887703133513m 0.13124124308724205m -0.5891127215309764m" data-normal="0.007055839531146961m 0.5876525292242154m 0.8090826410354468m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Right Rear Wheel + Tire</div>
+		</button><button onclick="ldeflector()" class="Hotspot" slot="hotspot-20" data-position="0.14353484389891757m 0.01748263631892244m 0.2519393747675299m" data-normal="0.37690297991690347m 0.9077108336823793m 0.18440495152082642m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Left Rear Deflector</div>
+		</button><button onclick="lshoulder()" class="Hotspot" slot="hotspot-21" data-position="0.10530768257274636m 0.19357821126730024m -0.10069081895651888m" data-normal="0.6055508482799692m 0.4765536633151m 0.637341961688047m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Left Shoulder Louvre</div>
+		</button><button onclick="lsidepod()" class="Hotspot" slot="hotspot-22" data-position="0.139625842701814m 0.1067876231775049m -0.23970743819161372m" data-normal="0.9488612635662157m 0.21999717583025852m -0.2264145426650752m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Left Side Pod</div>
+		</button><button onclick="rdeflector()" class="Hotspot" slot="hotspot-23" data-position="-0.15184911646868127m 0.020305010919393962m 0.25468346708685174m" data-normal="-0.3741691835477479m 0.8758058009224842m 0.3048960825490187m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Right Rear Deflector</div>
+		</button><button onclick="rshoulder()" class="Hotspot" slot="hotspot-24" data-position="-0.10726929571625377m 0.19301802909761923m -0.10711267049400874m" data-normal="-0.8635534240538586m 0.4938194806378287m -0.10206764593857244m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Right Shoulder Louvre</div>
+		</button><button onclick="rsidepod()" class="Hotspot" slot="hotspot-25" data-position="-0.139557347591154m 0.1069696096259195m -0.2398176601423099m" data-normal="-0.9488612635662157m 0.21999717583025852m -0.2264145426650752m" data-visibility-attribute="visible">
+			<div class="HotspotAnnotation">Right Side Pod</div>
+		</button>
+		<div class="progress-bar hide" slot="progress-bar">
+			<div class="update-bar"></div>
+		</div>
+		<div class="infoBG">
+			<div class="infoTitle">
+				<p id="component">MCL35M</p>
+			</div>
+			<div class="infoDescription">
+				<p id="description">McLaren F1 car which debuted the 2021 season: the MCL35M.</p>
+			</div>
+			<div class="infoRun">
+				<div class ="runTitle"><p>Total Run</p></div>
+				<p id="run">35</p>
+			</div>
+			<div class="infoSeperator"></div>
+			<div class="infoPrice">
+				<div class="priceTitle"><p>Original Price</p></div>
+				<p id="price">N/A</p>
+			</div>
+		</div>
+	</model-viewer>
+	<script>
+		const toggleModel = document.querySelector('#toggle-model');
+		function v1() {
+			toggleModel.setAttribute('src', `./models/model-3d-v1.glb`);
+		}
+		function v2() {
+			toggleModel.setAttribute('src', `./models/model-3d-v2.glb`);
+		}
+		v2();
+		function lf_wheel() {
+			document.getElementById("component").innerHTML = "Left Front Wheel + Tire";
+			document.getElementById("description").innerHTML = "Made from forged magnesium alloy, our wheels are incredibly light but also exceptionally strong. The fronts are ø625mm by 365mm wide and feature a captive nut to shave tenths off a pitstop. While Pirelli supply the tyres, the wheels are ours, which makes Thursday pretty busy in the tyre tent, with each team needing 160 tyres fitted to their rims.";
+			document.getElementById("run").innerHTML = "500";
+			document.getElementById("price").innerHTML = "$29.99";
+		}
+		function rf_wheel() {
+			document.getElementById("component").innerHTML = "Right Front Wheel + Tire";
+			document.getElementById("description").innerHTML = "Made from forged magnesium alloy, our wheels are incredibly light but also exceptionally strong. The fronts are ø625mm by 365mm wide and feature a captive nut to shave tenths off a pitstop. While Pirelli supply the tyres, the wheels are ours, which makes Thursday pretty busy in the tyre tent, with each team needing 160 tyres fitted to their rims.";
+			document.getElementById("run").innerHTML = "100,000";
+			document.getElementById("price").innerHTML = "FREE";
+		}
+		function nose() {
+			document.getElementById("component").innerHTML = "Nosebox";
+			document.getElementById("description").innerHTML = "Although it can be fitted in less than ten seconds, the nosebox of an F1 car is rather more than simply a carrier for the front wing. As the primary frontal impact structure, it is capable of dissipating vast amounts of energy to keep the driver safe in a front-on collision. The modern style is to mount the nose high, with the front wing slung underneath on pylons – all the better to channel air under the car. The MCL35M’s nosebox features a cape (like Batman) underneath, guiding airflow from the neutral section of the front wing out to the deflectors.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$199.99";
+		}
+		function fwing() {
+			document.getElementById("component").innerHTML = "Front Wing";
+			document.getElementById("description").innerHTML = "The front wing of the MCL35M does the aerodynamic heavy lifting. It’s the component that hits the air first, and thus shapes and conditions the flow of air over everything downstream. F1 aerodynamicists have decided that, rather like razors, more blades is better – but the FIA put a stop to the insanity by limiting the number of elements to five. It’s the one bit of the bodywork that can be fine-tuned once parc fermé rules kick in, with a flap adjuster that trims the angle of the wing to balance the car with more or less front-end grip.";
+			document.getElementById("run").innerHTML = "35";
+			document.getElementById("price").innerHTML = "$499.99";
+		}
+		function chassis() {
+			document.getElementById("component").innerHTML = "Chassis";
+			document.getElementById("description").innerHTML = "The chassis of the MCL35M is shorter than you think. Also called the survival cell, and sometimes just the ‘tub’, it attached to the nosebox at the front and the engine at the rear, with the front axle, steering column, pedal box and driver all bolted to it. Back in 1981, McLaren were the first team to introduce a carbon composite chassis and it’s proved quite popular ever since. Of course, the most important thing about it is how to pronounce ‘chassis’. Despite Zak’s best efforts, most of the team go for the soft ‘ch’. Like chef, not like chair.";
+			document.getElementById("run").innerHTML = "300";
+			document.getElementById("price").innerHTML = "$99.99";
+		}
+		function lshoulder() {
+			document.getElementById("component").innerHTML = "Left Shoulder Louvre";
+			document.getElementById("description").innerHTML = "They say nature has all the best designs and certainly the shoulder louvres of an F1 car carry more than a passing resemblance to the gills of a fish. Mounted atop the sidepods (the ‘shoulders’), they’re used to provide extra cooling for components tucked away under the skin. They come with a drag penalty, so the arrangement is different from race to race, dependent upon ambient conditions and duty cycle. We fit long louvres, short louvres, sometimes no louvres. They’re occasionally asymmetrical – because sometimes the components installed in one sidepod run a little hotter than those in the other.";
+			document.getElementById("run").innerHTML = "250";
+			document.getElementById("price").innerHTML = "$149.99";
+		}
+		function rshoulder() {
+			document.getElementById("component").innerHTML = "Right Shoulder Louvre";
+			document.getElementById("description").innerHTML = "They say nature has all the best designs and certainly the shoulder louvres of an F1 car carry more than a passing resemblance to the gills of a fish. Mounted atop the sidepods (the ‘shoulders’), they’re used to provide extra cooling for components tucked away under the skin. They come with a drag penalty, so the arrangement is different from race to race, dependent upon ambient conditions and duty cycle. We fit long louvres, short louvres, sometimes no louvres. They’re occasionally asymmetrical – because sometimes the components installed in one sidepod run a little hotter than those in the other.";
+			document.getElementById("run").innerHTML = "250";
+			document.getElementById("price").innerHTML = "$149.99";
+		}
+		function rsidepod() {
+			document.getElementById("component").innerHTML = "Right Side Pod";
+			document.getElementById("description").innerHTML = "The sidepods of a Formula One car pack a lot of technology into a very small space – usually as small a space as possible. Housed either side of the cockpit, running alongside the engine and tapering away at the gearbox, the sidepods house everything from delicate electronics boxes to complex and labyrinthine exhausts. Their primary task, however, is housing the radiators and coolers that keep power unit temperatures under control. Sculpted for maximum aerodynamic benefit, their shape and size is a constant battle between the requirement to deliver enough cooling, and the desire to minimise drag.";
+			document.getElementById("run").innerHTML = "250";
+			document.getElementById("price").innerHTML = "$99.99";
+		}
+		function lsidepod() {
+			document.getElementById("component").innerHTML = "Left Side Pod";
+			document.getElementById("description").innerHTML = "The sidepods of a Formula One car pack a lot of technology into a very small space – usually as small a space as possible. Housed either side of the cockpit, running alongside the engine and tapering away at the gearbox, the sidepods house everything from delicate electronics boxes to complex and labyrinthine exhausts. Their primary task, however, is housing the radiators and coolers that keep power unit temperatures under control. Sculpted for maximum aerodynamic benefit, their shape and size is a constant battle between the requirement to deliver enough cooling, and the desire to minimise drag.";
+			document.getElementById("run").innerHTML = "250";
+			document.getElementById("price").innerHTML = "$199.99";
+		}
+		function steeringwheel() {
+			document.getElementById("component").innerHTML = "Steering Wheel";
+			document.getElementById("description").innerHTML = "Like a smartphone with a 1000 apps, one of which can make phone calls, the modern F1 steering wheel allows the driver to undertake thousands of tasks – one of which is steering an F1 car. It features paddles on the back, toggles on top, thumb wheels, buttons and rotaries around a display. From brake balance to diff settings to ERS modes, it answers the question: how much can a person do with two thumbs and eight fingers while driving at 350km/h? Each wheel is bespoke, with the drivers’ choice of grips and – if the team really likes them – button placement.";
+			document.getElementById("run").innerHTML = "150";
+			document.getElementById("price").innerHTML = "$249.99";
+		}
+		function enginecover() {
+			document.getElementById("component").innerHTML = "Engine Cover";
+			document.getElementById("description").innerHTML = "The engine cover is a cover that – stop us if this is getting too technical – goes over the engine. While these tend to be one of the less complex pieces of bodywork geometry, there’s a lot going on with the modern engine cover, from the ridged centreline to the addition of a T-wing (aka ‘the coathanger’) for the high downforce tracks. While the underside of every engine cover features a heatshield, the team can choose between tight and looser bodywork, depending on how hot they believe the engine compartment is going to get at any given race.";
+			document.getElementById("run").innerHTML = "75";
+			document.getElementById("price").innerHTML = "$199.99";
+		}
+		function halo() {
+			document.getElementById("component").innerHTML = "Halo";
+			document.getElementById("description").innerHTML = "To the best of our knowledge, no-one has dropped a double-decker bus onto the Halo but were anyone so inclined, the Halo would survive unscathed. F1’s forward roll-hoop is tough: the 9kg titanium structure has been designed to deflect a 20kg projectile traveling at 225km/h (think untethered wheel – but also cannonball), protecting the driver from impacts with debris, other cars and crash barriers. It’s a standard-issue FIA component but McLaren do a gargantuan amount of development work to beef-up the chassis around the mounting points, ensuring the MCL35M can pass a really quite brutal (but bus-free) crush test.";
+			document.getElementById("run").innerHTML = "75";
+			document.getElementById("price").innerHTML = "$249.99";
+		}
+		function suspension() {
+			document.getElementById("component").innerHTML = "Suspension";
+			document.getElementById("description").innerHTML = "The purpose of suspension on the MCL35M – or any racing car – is to keep all four wheels in contact with the ground for as much of the lap as possible. It isn’t – much to their constant disappointment – there to make the driver comfortable, unless the ride is so jarring it rattles their fillings to the extent of making it impossible to grip the wheel. Suspension is the ultimate configurable system on an F1 car, a non-stop compromise of adjustment from track-to-track and session-to-session, tailored to kerbs and corners, asphalt condition and driver preferences. It’s rarely the same set-up twice.";
+			document.getElementById("run").innerHTML = "75";
+			document.getElementById("price").innerHTML = "$199.99";
+		}
+		function seat() {
+			document.getElementById("component").innerHTML = "Driver's Seat";
+			document.getElementById("description").innerHTML = "A drivers’ seat is as unique as their fingerprint – though that’s not the part of the anatomy scanned when the team are making one. The driver sits on a resin sack that contours itself around their back and backside. When it hardens, a scan of their… imprint… is taken and turned into a carbon composite form . If they’re lucky, some foam padding may be added. The seat isn’t bolted into the car but held in place securely by the seatbelts, making it much easier to extract the driver and seat together, if ever there is a suspicion of spinal injury.";
+			document.getElementById("run").innerHTML = "75";
+			document.getElementById("price").innerHTML = "$249.99";
+		}
+		function rmirror() {
+			document.getElementById("component").innerHTML = "Right Wing Mirror";
+			document.getElementById("description").innerHTML = "When considering F1 wing mirrors, different people hear different things. Drivers, for instance, hear ‘mirror’; aerodynamicists, on the other hand, hear ‘wing’. For such a small part of the car, the volume of regulation concerning the size, shape and placement of wing mirrors is truly gargantuan, with a constant cold war between the regulators and the designers over the placement of slots, brackets and louvres, designed to turn the humble mirror into a powerful turning vane. Fortunately for the drivers, their mirrors still have to pass a rearwards vision test.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$99.99";
+		}
+		function lmirror() {
+			document.getElementById("component").innerHTML = "Left Wing Mirror";
+			document.getElementById("description").innerHTML = "When considering F1 wing mirrors, different people hear different things. Drivers, for instance, hear ‘mirror’; aerodynamicists, on the other hand, hear ‘wing’. For such a small part of the car, the volume of regulation concerning the size, shape and placement of wing mirrors is truly gargantuan, with a constant cold war between the regulators and the designers over the placement of slots, brackets and louvres, designed to turn the humble mirror into a powerful turning vane. Fortunately for the drivers, their mirrors still have to pass a rearwards vision test.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$99.99";
+		}
+		function lr_wheel() {
+			document.getElementById("component").innerHTML = "Left Rear Wheel + Tire";
+			document.getElementById("description").innerHTML = "Our forged Magnesium alloy rear wheels measure ø625mm (the same as the fronts) and 445mm wide (80mm wider). Each rim is barcoded and paired with a specific tyre, and once the tyres are fitted, they go into our stacks, to be warmed in their electronic heated blankets. In a pitstop, rear wheels are slightly harder to fit than front wheels, because they’re heavier – 16kg vs 14kg – with the captive nut buried slightly deeper within the well. The gunner on the outside rear corner has the toughest job: he can’t see the car approaching.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$29.99";
+		}
+		function rr_wheel() {
+			document.getElementById("component").innerHTML = "Right Rear Wheel + Tire";
+			document.getElementById("description").innerHTML = "Our forged Magnesium alloy rear wheels measure ø625mm (the same as the fronts) and 445mm wide (80mm wider). Each rim is barcoded and paired with a specific tyre, and once the tyres are fitted, they go into our stacks, to be warmed in their electronic heated blankets. In a pitstop, rear wheels are slightly harder to fit than front wheels, because they’re heavier – 16kg vs 14kg – with the captive nut buried slightly deeper within the well. The gunner on the outside rear corner has the toughest job: he can’t see the car approaching.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$29.99";
+		}
+		function floor() {
+			document.getElementById("component").innerHTML = "Car Floor";
+			document.getElementById("description").innerHTML = "Everyone looks at the top body of an F1 car – but the bodywork facing down is just as important – perhaps more so. The floor of an F1 car is its biggest component: five metres of intricately crafted carbon composite that fastens to the bottom of the chassis, engine and gearbox. It takes a terrible pummelling which keeps the bodywork techs in the garage very busy with the hot glue and heat guns, and is always being upgraded – though hopefully only at races with a roomy garage – because it’s rather cumbersome to keep swapping out where space is tight.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$249.99";
+		}
+		function ldeflector() {
+			document.getElementById("component").innerHTML = "Left Rear Deflector";
+			document.getElementById("description").innerHTML = "Rear deflectors – more commonly referred to as ‘barge boards’ – sit behind the front wheels and ahead of the sidepods. Their purpose is to gather the vortex coming off the neutral section of the front wing, and the turbulent wake from the front wheels, and channel it out and away from the car, allowing smoother airflow to infill and work with the diffuser. We call this a rear deflector to differentiate it from a front deflector and mid-deflector mounted further forward. These components really are collectors’ items – the 2022 regulations ban them.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$249.99";
+		}
+		function rdeflector() {
+			document.getElementById("component").innerHTML = "Right Rear Deflector";
+			document.getElementById("description").innerHTML = "Rear deflectors – more commonly referred to as ‘barge boards’ – sit behind the front wheels and ahead of the sidepods. Their purpose is to gather the vortex coming off the neutral section of the front wing, and the turbulent wake from the front wheels, and channel it out and away from the car, allowing smoother airflow to infill and work with the diffuser. We call this a rear deflector to differentiate it from a front deflector and mid-deflector mounted further forward. These components really are collectors’ items – the 2022 regulations ban them.";
+			document.getElementById("run").innerHTML = "50";
+			document.getElementById("price").innerHTML = "$249.99";
+		}
+		function rwing() {
+			document.getElementById("component").innerHTML = "Rear Wing";
+			document.getElementById("description").innerHTML = "What does the rear wing of the MCL35M look like? Trick question – it depends on where we’re racing. There are currently four versions of the rear wing, ranging from the throw-everything-at-it barn-door for Monaco, to the why-do-we-even-bother? ultra low-drag version for Monza. Each has a DRS flap – though the skinnier the wing, the less effective DRS will be. They can be fine-tuned with gurney flaps, or set-up to work with mid-wings. RW4 has the most downforce, RW2 has the least and RW1 and RW3 are in between. Naming things not really the strong point of the aerodynamics department…";
+			document.getElementById("run").innerHTML = "35";
+			document.getElementById("price").innerHTML = "$499.99";
+		}
+		const modelViewer = document.querySelector('#toggle-model');
+		const tapDistance = 2;
+		let panning = false;
+		let panX, panY;
+		let startX, startY;
+		let lastX, lastY;
+		let metersPerPixel;
+
+		const startPan = () => {
+			const orbit = modelViewer.getCameraOrbit();
+			const {theta, phi, radius} = orbit;
+			const psi = theta - modelViewer.turntableRotation;
+			metersPerPixel = 0.75 * radius / modelViewer.getBoundingClientRect().height;
+			panX = [-Math.cos(psi), 0, Math.sin(psi)];
+			panY = [
+			-Math.cos(phi) * Math.sin(psi),
+			Math.sin(phi),
+			-Math.cos(phi) * Math.cos(psi)
+			];
+			modelViewer.interactionPrompt = 'none';
+		};
+
+		const movePan = (thisX, thisY) => {
+			const dx = (thisX - lastX) * metersPerPixel;
+			const dy = (thisY - lastY) * metersPerPixel;
+			lastX = thisX;
+			lastY = thisY;
+
+			const target = modelViewer.getCameraTarget();
+			target.x += dx * panX[0] + dy * panY[0];
+			target.y += dx * panX[1] + dy * panY[1];
+			target.z += dx * panX[2] + dy * panY[2];
+			modelViewer.cameraTarget = `${target.x}m ${target.y}m ${target.z}m`;
+
+			// This pauses turntable rotation
+			modelViewer.dispatchEvent(new CustomEvent(
+				'camera-change', {detail: {source: 'user-interaction'}}));
+		};
+
+		const recenter = (pointer) => {
+			panning = false;
+			if (Math.abs(pointer.clientX - startX) > tapDistance ||
+				Math.abs(pointer.clientY - startY) > tapDistance)
+			return;
+			const hit = modelViewer.positionAndNormalFromPoint(pointer.clientX, pointer.clientY);
+			modelViewer.cameraTarget =
+				hit == null ? 'auto auto auto' : hit.position.toString();
+		};
+
+		modelViewer.addEventListener('mousedown', (event) => {
+			startX = event.clientX;
+			startY = event.clientY;
+			panning = event.button === 2 || event.ctrlKey || event.metaKey ||
+				event.shiftKey;
+			if (!panning)
+			return;
+
+			lastX = startX;
+			lastY = startY;
+			startPan();
+			event.stopPropagation();
+		}, true);
+
+		modelViewer.addEventListener('touchstart', (event) => {
+			const {targetTouches, touches} = event;
+			startX = targetTouches[0].clientX;
+			startY = targetTouches[0].clientY;
+			panning = targetTouches.length === 2 && targetTouches.length === touches.length;
+			if (!panning)
+			return;
+
+			lastX = 0.5 * (targetTouches[0].clientX + targetTouches[1].clientX);
+			lastY = 0.5 * (targetTouches[0].clientY + targetTouches[1].clientY);
+			startPan();
+		}, true);
+
+		self.addEventListener('mousemove', (event) => {
+			if (!panning)
+			return;
+
+			movePan(event.clientX, event.clientY);
+			event.stopPropagation();
+		}, true);
+
+		modelViewer.addEventListener('touchmove', (event) => {
+			if (!panning || event.targetTouches.length !== 2)
+			return;
+
+			const {targetTouches} = event;
+			const thisX = 0.5 * (targetTouches[0].clientX + targetTouches[1].clientX);
+			const thisY = 0.5 * (targetTouches[0].clientY + targetTouches[1].clientY);
+			movePan(thisX, thisY);
+		}, true);
+
+		self.addEventListener('mouseup', (event) => {
+			recenter(event);
+		}, true);
+	  
+		modelViewer.addEventListener('touchend', (event) => {
+			if (event.targetTouches.length === 0) {
+			recenter(event.changedTouches[0]);
+
+			if (event.cancelable) {
+				event.preventDefault();
+			}
+			}
+		}, true);
+	</script>
+	<script src="./scripts/script.js"></script>
+	<!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
